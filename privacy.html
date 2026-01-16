@@ -4,190 +4,190 @@
   <meta charset="UTF-8" />
   <title>Privacy Policy – X One-Click Block</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #161b22;
+      --text: #ffffff;
+      --muted: #c9d1d9;
+      --soft: #8b949e;
+      --primary: #1d9bf0;
+      --secondary: #30363d;
+    }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #0f1419;
-      color: #ffffff;
       margin: 0;
-      padding: 24px;
-      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.8;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
+      padding: 40px 24px 60px;
     }
-    h1 {
-      font-size: 22px;
-      margin-bottom: 8px;
+
+    /* ---------- Header ---------- */
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid #21262d;
+      padding-bottom: 20px;
     }
-    h2 {
-      font-size: 16px;
-      margin-top: 24px;
+
+    header h1 {
+      font-size: 34px;
+      margin: 0 0 6px;
     }
-    p {
-      color: #d0d7de;
+
+    header p {
+      color: var(--soft);
+      font-size: 15px;
+      margin: 0;
     }
+
+    /* ---------- Language Switch ---------- */
     .lang-switch {
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
+
     .lang-switch button {
       margin-right: 8px;
-      padding: 6px 10px;
-      background: #1d9bf0;
+      padding: 8px 14px;
+      font-size: 13px;
+      border-radius: 6px;
       border: none;
-      color: #fff;
       cursor: pointer;
-      border-radius: 4px;
-      font-size: 12px;
+      background: var(--secondary);
+      color: var(--text);
+      transition: all 0.15s ease;
     }
-    .lang-switch button.secondary {
-      background: #30363d;
+
+    .lang-switch button:hover {
+      background: #3d444d;
     }
-    footer {
+
+    .lang-switch button.active {
+      background: var(--primary);
+      font-weight: 600;
+    }
+
+    /* ---------- Content ---------- */
+    section {
       margin-top: 40px;
-      font-size: 12px;
-      color: #8b949e;
     }
-    a {
-      color: #1d9bf0;
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    section p {
+      font-size: 17px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #21262d;
+      font-size: 13px;
+      color: var(--soft);
+    }
+
+    footer a {
+      color: var(--primary);
       text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="lang-switch">
-      <button onclick="setLang('en')">EN</button>
-      <button onclick="setLang('tr')" class="secondary">TR</button>
-      <button onclick="setLang('fr')" class="secondary">FR</button>
-      <button onclick="setLang('es')" class="secondary">ES</button>
-    </div>
+
+    <header>
+      <h1>Privacy Policy</h1>
+      <p>X One-Click Block – Chrome Extension</p>
+
+      <div class="lang-switch">
+        <button data-btn="en">EN</button>
+        <button data-btn="tr">TR</button>
+        <button data-btn="fr">FR</button>
+        <button data-btn="es">ES</button>
+      </div>
+    </header>
 
     <!-- EN -->
-    <div data-lang="en">
-      <h1>Privacy Policy – X One-Click Block</h1>
-
-      <p>
-        X One-Click Block does not collect, transmit, sell, or share any personal data.
-      </p>
-
-      <p>
-        The extension stores limited information locally on the user’s device, such as blocked usernames,
-        block timestamps, and related tweet URLs. This data is used solely to display the user’s own
-        block history and statistics inside the extension.
-      </p>
-
-      <p>
-        All data remains on the user’s device and is never sent to external servers or third parties.
-      </p>
-
-      <p>
-        The extension only operates on x.com and twitter.com to enable its blocking functionality.
-      </p>
-    </div>
+    <section data-lang="en">
+      <h2>Privacy Policy – X One-Click Block</h2>
+      <p>X One-Click Block does not collect, transmit, sell, or share any personal data.</p>
+      <p>The extension stores limited information locally on the user’s device, such as blocked usernames, block timestamps, and related tweet URLs. This data is used solely to display the user’s own block history and statistics inside the extension.</p>
+      <p>All data remains on the user’s device and is never sent to external servers or third parties.</p>
+      <p>The extension only operates on x.com and twitter.com to enable its blocking functionality.</p>
+    </section>
 
     <!-- TR -->
-    <div data-lang="tr" hidden>
-      <h1>Gizlilik Politikası – X One-Click Block</h1>
-
-      <p>
-        X One-Click Block herhangi bir kişisel veriyi toplamaz, iletmez, satmaz veya paylaşmaz.
-      </p>
-
-      <p>
-        Uzantı, engellenen kullanıcı adları, engelleme tarihleri ve ilgili tweet bağlantıları gibi
-        sınırlı bilgileri yalnızca kullanıcının kendi cihazında saklar. Bu bilgiler sadece uzantı
-        içerisinde engelleme geçmişi ve istatistikleri göstermek amacıyla kullanılır.
-      </p>
-
-      <p>
-        Tüm veriler kullanıcının cihazında kalır ve hiçbir şekilde harici sunuculara veya üçüncü
-        taraflara gönderilmez.
-      </p>
-
-      <p>
-        Uzantı yalnızca engelleme işlevini gerçekleştirmek için x.com ve twitter.com üzerinde çalışır.
-      </p>
-    </div>
+    <section data-lang="tr" hidden>
+      <h2>Gizlilik Politikası – X One-Click Block</h2>
+      <p>X One-Click Block herhangi bir kişisel veriyi toplamaz, iletmez, satmaz veya paylaşmaz.</p>
+      <p>Uzantı; engellenen kullanıcı adları, engelleme tarihleri ve ilgili tweet bağlantıları gibi sınırlı bilgileri yalnızca kullanıcının kendi cihazında saklar.</p>
+      <p>Tüm veriler kullanıcının cihazında kalır ve hiçbir şekilde üçüncü taraflarla paylaşılmaz.</p>
+      <p>Uzantı yalnızca engelleme işlevini sağlamak amacıyla x.com ve twitter.com üzerinde çalışır.</p>
+    </section>
 
     <!-- FR -->
-    <div data-lang="fr" hidden>
-      <h1>Politique de confidentialité – X One-Click Block</h1>
-
-      <p>
-        X One-Click Block ne collecte, ne transmet, ne vend et ne partage aucune donnée personnelle.
-      </p>
-
-      <p>
-        L’extension stocke localement sur l’appareil de l’utilisateur des informations limitées,
-        telles que les noms d’utilisateurs bloqués, les dates de blocage et les liens des tweets
-        concernés. Ces données sont utilisées uniquement pour afficher l’historique et les statistiques
-        de blocage dans l’extension.
-      </p>
-
-      <p>
-        Toutes les données restent sur l’appareil de l’utilisateur et ne sont jamais envoyées à des
-        serveurs externes ou à des tiers.
-      </p>
-
-      <p>
-        L’extension fonctionne uniquement sur x.com et twitter.com afin d’activer la fonctionnalité
-        de blocage.
-      </p>
-    </div>
+    <section data-lang="fr" hidden>
+      <h2>Politique de confidentialité – X One-Click Block</h2>
+      <p>X One-Click Block ne collecte, ne transmet, ne vend et ne partage aucune donnée personnelle.</p>
+      <p>Les données stockées localement sont limitées aux noms d’utilisateurs bloqués, dates de blocage et liens de tweets concernés.</p>
+      <p>Aucune donnée n’est transmise à des serveurs externes ou à des tiers.</p>
+      <p>L’extension fonctionne uniquement sur x.com et twitter.com.</p>
+    </section>
 
     <!-- ES -->
-    <div data-lang="es" hidden>
-      <h1>Política de privacidad – X One-Click Block</h1>
-
-      <p>
-        X One-Click Block no recopila, transmite, vende ni comparte datos personales.
-      </p>
-
-      <p>
-        La extensión almacena información limitada de forma local en el dispositivo del usuario,
-        como nombres de usuario bloqueados, fechas de bloqueo y enlaces de tweets relacionados.
-        Estos datos se utilizan únicamente para mostrar el historial y las estadísticas de bloqueo
-        dentro de la extensión.
-      </p>
-
-      <p>
-        Todos los datos permanecen en el dispositivo del usuario y nunca se envían a servidores
-        externos ni a terceros.
-      </p>
-
-      <p>
-        La extensión solo funciona en x.com y twitter.com para habilitar la funcionalidad de bloqueo.
-      </p>
-    </div>
+    <section data-lang="es" hidden>
+      <h2>Política de privacidad – X One-Click Block</h2>
+      <p>X One-Click Block no recopila ni comparte datos personales.</p>
+      <p>La información se almacena únicamente de forma local en el dispositivo del usuario.</p>
+      <p>Los datos nunca se envían a servidores externos ni a terceros.</p>
+      <p>La extensión funciona solo en x.com y twitter.com.</p>
+    </section>
 
     <footer>
-      <p>
-        Project repository:
-        <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">
-          GitHub
-        </a>
-      </p>
+      Project repository:
+      <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank">GitHub</a>
     </footer>
   </div>
 
   <script>
+    const buttons = document.querySelectorAll(".lang-switch button");
+    const sections = document.querySelectorAll("[data-lang]");
+
     function setLang(lang) {
-      document.querySelectorAll("[data-lang]").forEach(el => {
-        el.hidden = el.getAttribute("data-lang") !== lang;
+      sections.forEach(s => {
+        s.hidden = s.getAttribute("data-lang") !== lang;
+      });
+
+      buttons.forEach(b => {
+        b.classList.toggle("active", b.dataset.btn === lang);
       });
     }
 
     // Auto-detect browser language
-    (function () {
-      const lang = (navigator.language || "en").slice(0, 2);
-      if (["en", "tr", "fr", "es"].includes(lang)) {
-        setLang(lang);
-      } else {
-        setLang("en");
-      }
-    })();
+    const browserLang = (navigator.language || "en").slice(0, 2);
+    setLang(["en", "tr", "fr", "es"].includes(browserLang) ? browserLang : "en");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => setLang(btn.dataset.btn));
+    });
   </script>
 </body>
 </html>
